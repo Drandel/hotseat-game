@@ -1,5 +1,8 @@
 ## Getting Started
 
+Note: 
+> You will need to have node.js, npm or (prefferably) yarn setup
+
 To get started with the project, follow these steps:
 
 1. Clone the repository
@@ -8,23 +11,23 @@ To get started with the project, follow these steps:
 
    ```bash
     cd server
-    npm install
-    cd ../server
-    yarn install
+    [npm/yarn] install
+    cd ../client
+    [npm/yarn] install
    ```
 
 3. Start the backend server:
 
    ```bash
     cd server
-    yarn dev
+    [npm/yarn] dev
    ```
 
 4. Start the frontend development server:
 
    ```bash
     cd client
-    yarn dev --host
+    [npm/yarn] dev --host
    ```
 
 Open web browser to the URL specified in the client terminal output (not localhost)
