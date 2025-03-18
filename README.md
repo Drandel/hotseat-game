@@ -21,10 +21,12 @@ To get started with the project, follow these steps:
 
    ```bash
     cd client
-    yarn dev
+    yarn dev --host
    ```
 
-Web browser should automatically open up to localhost with the correct port
+Open web browser to the URL specified in the client terminal output (not localhost)
+![image](https://github.com/user-attachments/assets/ebf9af36-490e-4a43-ba83-6a610716a339)
+
 
 ## Hot Seat Online
 
