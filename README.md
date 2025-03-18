@@ -2,19 +2,27 @@
 
 To get started with the project, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/hot-seat-online.git
+1. Clone the repository
 
-Install dependencies: npm install
+2. Install dependencies:
 
-Start the backend server:
+   ```bash
+    npm install
+   ```
 
-- [`cd server`]
-- [`yarn dev`]
+3. Start the backend server:
 
-Start the frontend development server:
+   ```bash
+    cd server
+    yarn dev
+   ```
 
-- [`cd server`]
-- [`yarn dev`]
+4. Start the frontend development server:
+
+   ```bash
+    cd client
+    yarn dev
+   ```
 
 Web browser should automatically open up to localhost with the correct port
 
