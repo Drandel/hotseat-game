@@ -4,10 +4,13 @@ To get started with the project, follow these steps:
 
 1. Clone the repository
 
-2. Install dependencies:
+2. Install dependencies in both apps:
 
    ```bash
+    cd server
     npm install
+    cd ../server
+    yarn install
    ```
 
 3. Start the backend server:
