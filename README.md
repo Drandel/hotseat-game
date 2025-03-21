@@ -1,11 +1,18 @@
 ## Getting Started
 
-Note: 
+Note:
+
 > You will need to have node.js, npm or (prefferably) yarn setup
 
 To get started with the project, follow these steps:
 
-1. Clone the repository
+1. Clone the repository and set Pre-Commit Hook Directory
+
+   ```
+   git clone [repo url]
+   cd hotseat-game
+   git config --local core.hooksPath .githooks/
+   ```
 
 2. Install dependencies in both apps:
 
@@ -32,7 +39,6 @@ To get started with the project, follow these steps:
 
 Open web browser to the URL specified in the client terminal output (not localhost)
 ![image](https://github.com/user-attachments/assets/ebf9af36-490e-4a43-ba83-6a610716a339)
-
 
 ## Hot Seat Online
 
