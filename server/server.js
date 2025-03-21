@@ -2,8 +2,11 @@ import registerSocketHandlers from "./socketHandlers/index.js";
 import express from "express";
 import http from "http";
 import { Server } from "socket.io";
+import { questions } from "./data/index.js";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
@@ -26,4 +29,8 @@ io.on("connection", (socket) => {
 
 server.listen(8080, () => {
   console.log("Server is running on port 8080");
+});
+
+app.get("/api/questions", (req, res) => {
+  res.json(questions);
 });
