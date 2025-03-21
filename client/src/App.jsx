@@ -22,8 +22,6 @@ function App() {
     );
   }
 
-  console.log(questions);
-
   if (view === "joinGame") {
     return (
       <div>
