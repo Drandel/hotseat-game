@@ -1,4 +1,4 @@
-module.exports = (socket, io, lobbies) => {
+export default (socket, io, lobbies) => {
   socket.on("disconnect", () => {
     console.log(`User disconnected: ${socket.id}`);
 

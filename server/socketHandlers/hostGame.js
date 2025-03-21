@@ -1,8 +1,8 @@
 const generateGameCode = () => {
-  return Math.random().toString(36).substr(2, 4).toUpperCase();
+  return Math.random().toString(36).slice(2, 6).toUpperCase();
 };
 
-module.exports = (socket, io, lobbies) => {
+export default (socket, io, lobbies) => {
   socket.on("hostGame", (playerName) => {
     let gameCode;
     do {

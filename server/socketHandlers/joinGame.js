@@ -1,4 +1,4 @@
-module.exports = (socket, io, lobbies) => {
+export default (socket, io, lobbies) => {
   socket.on("joinGame", ({ gameCode, playerName }) => {
     if (lobbies[gameCode]) {
       // Add player with name
