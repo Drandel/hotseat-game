@@ -10,11 +10,6 @@ export const useSocket = () => {
   const [isHost, setIsHost] = useState(false);
 
   useEffect(() => {
-    // Check if the socket is connected
-    if (!socket.connected) {
-      alert("Not connected to server. Ensure the back end server is running.");
-    }
-
     // Listen for game creation
     socket.on("gameCreated", (code) => {
       setGameCode(code);
