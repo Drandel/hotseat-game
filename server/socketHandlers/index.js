@@ -1,8 +1,8 @@
-const hostGame = require("./hostGame");
-const joinGame = require("./joinGame");
-const disconnect = require("./disconnect");
+import hostGame from "./hostGame.js";
+import joinGame from "./joinGame.js";
+import disconnect from "./disconnect.js";
 
-module.exports = (socket, io, lobbies) => {
+export default (socket, io, lobbies) => {
   hostGame(socket, io, lobbies);
   joinGame(socket, io, lobbies);
   disconnect(socket, io, lobbies);
