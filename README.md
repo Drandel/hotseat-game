@@ -27,7 +27,7 @@ To get started with the project, follow these steps:
 
    ```bash
     cd client
-    [npm/yarn] dev --host
+    [npm/yarn] dev
    ```
 
 Open web browser to the URL specified in the client terminal output (not localhost)
