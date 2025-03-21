@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSocket } from "./hooks/useSocket";
+import useQuestions from "./api/hooks/useQuestions";
 import MainMenu from "./components/MainMenu";
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     useSocket();
   const [view, setView] = useState("menu");
   const [inputCode, setInputCode] = useState("");
+
+  const { questions } = useQuestions();
 
   if (view === "menu") {
     return (
@@ -46,7 +49,6 @@ function App() {
       </div>
     );
   }
-
   if (view === "lobby") {
     return (
       <div>
@@ -56,6 +58,12 @@ function App() {
         <ul>
           {players.map((player, index) => (
             <li key={index}>{player.name}</li>
+          ))}
+        </ul>
+        <p>Questions:</p>
+        <ul>
+          {questions?.map((q, index) => (
+            <li key={index}>{q}</li>
           ))}
         </ul>
       </div>
